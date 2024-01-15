@@ -8,6 +8,17 @@ import { ChatMessageProps } from "../components/ChatMessage";
 export default function ChatRoom() {
   const [messageText, setMessageText] = useState("");
 
+  // TODO
+  /**
+   * Agora, é hora de aprimorar o armazenamento das mensagens! Atualmente, 
+   * o ChatEnvio está registrando suas mensagens no estado do componente, 
+   * o que não é ideal para uma aplicação destinada a atender milhares de usuários. 
+   * Recomendo que adote uma abordagem mais escalável, 
+   * como utilizar um gerenciador de estado como o Redux. 
+   * Isso proporcionará uma gestão mais eficiente e otimizada das mensagens, 
+   * garantindo um desempenho superior à medida que a aplicação cresce em escala.
+   */
+  
   const [messages, setMessages] = useState<Array<ChatMessageProps>>([]);
   const dummy = useRef<HTMLDivElement>(null);
 
